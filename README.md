@@ -6,6 +6,7 @@
 Battle Kingdoms is a simple turned based RPG similar to the likes of Final Fantasy. This project simply for CS-305 and not designed for commercial use. Any properties used are only used in good fun and are not meant to infringe on copyright. Intellectual properties used in this game our not owned by us and are only being used in an educational setting.
 
 ## Table of Contents
+* [Wiki](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World/wiki)
 * [Screenshots](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#screenshots)
 * [Getting Started](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#getting-started)
   * [Prerequisites](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#prerequisites)
