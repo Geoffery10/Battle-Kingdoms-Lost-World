@@ -6,20 +6,13 @@
 Battle Kingdoms is a simple turned based RPG similar to the likes of Final Fantasy. This project simply for CS-305 and not designed for commercial use. Any properties used like the Final Fantasy logo are only used in good fun and are not ment to infrenge on copyright.
 
 ## Table of Contents
-* [Screenshots](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World
-/blob/master/README.md#screenshots)
-* [Getting Started](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World
-#getting-started)
-  * [Prerequisites](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World
-#prerequisites)
-  * [Installing](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World
-#installing)
-* [Built With](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World
-#built-with)
-* [Authors](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World
-#authors)
-* [License and Acknowledgments](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World
-#license)
+* [Screenshots](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#screenshots)
+* [Getting Started](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#getting-started)
+  * [Prerequisites](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#prerequisites)
+  * [Installing](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#installing)
+* [Built With](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#built-with)
+* [Authors](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#authors)
+* [License and Acknowledgments](https://github.com/Geoffery10/Battle-Kingdoms-Lost-World#license)
 
 ## Screenshots
 * None
