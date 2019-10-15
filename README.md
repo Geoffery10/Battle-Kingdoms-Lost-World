@@ -34,7 +34,7 @@ Battle Kingdoms is a simple turned based RPG similar to the likes of Final Fanta
 ## Authors
 
 * **Geoffery Powell - [Geoffery10](https://github.com/Geoffery10)** - Developer
-* **Mario - [lealmario114](https://github.com/lealmario114)** - Developer
+* **Mario Leal - [lealmario114](https://github.com/lealmario114)** - Developer
 
 ## License
 
