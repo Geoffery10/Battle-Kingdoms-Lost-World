@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mainbg"
-    tools:context=".SettingActivity">
+    tools:context=".activities.SettingActivity">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="77dp"
@@ -61,13 +61,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnSettings"
+        android:id="@+id/btnBack"
         android:layout_width="63dp"
         android:layout_height="63dp"
         android:background="@drawable/button_right_v2"
-        android:foreground="@drawable/gears_v1"
+        android:foreground="@drawable/back_v1"
         android:textColor="@color/colorTextLight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
