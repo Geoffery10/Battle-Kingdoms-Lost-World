@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         //View Elements
         Button btnPlayGame = findViewById(R.id.btnPlayGame);
+        Button btnSettings = findViewById(R.id.btnSettings);
 
         //Buttons
         btnPlayGame.setOnClickListener(new View.OnClickListener() {
@@ -23,7 +25,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Start Game
                 //Open Intent
-                //Intent in = new Intent(getApplicationContext(), OLSheetActivity.class);
+                //Intent in = new Intent(getApplicationContext(), PlayActivity.class);
+
+                //Temp Code
+                Toast toast = Toast.makeText(getApplicationContext(), "Feature is not yet available.", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Open Settings Menu
+                //Open Intent
+                //Intent in = new Intent(getApplicationContext(), SettingsActivity.class);
+
+                //Temp Code
+                Toast toast = Toast.makeText(getApplicationContext(), "Feature is not yet available.", Toast.LENGTH_SHORT);
+                toast.show();
             }
         });
     }
