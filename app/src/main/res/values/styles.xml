@@ -10,6 +10,9 @@
         <item name="android:textColor">@color/colorTextLight</item>
         <item name="android:includeFontPadding">false</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
 </resources>
