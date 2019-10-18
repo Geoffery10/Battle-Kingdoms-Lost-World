@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         //View Elements
         Button btnPlayGame = findViewById(R.id.btnPlayGame);
+        Button btnQuitGame = findViewById(R.id.btnQuitGame);
         Button btnSettings = findViewById(R.id.btnSettings);
 
         //Buttons
@@ -34,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 //Temp Code
                 Toast toast = Toast.makeText(getApplicationContext(), "Feature is not yet available.", Toast.LENGTH_SHORT);
                 toast.show();
+            }
+        });
+
+        btnQuitGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Quit Game
+                finish();
+                System.exit(0);
             }
         });
 
