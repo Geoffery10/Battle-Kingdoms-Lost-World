@@ -1,5 +1,6 @@
 package com.thecoredepository.battlekingdoms.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,12 +29,8 @@ public class ChoosePartyActivity extends AppCompatActivity
                 //This Should Open Up the Travel Screen.
 
                 //Open Intent
-                //Intent in = new Intent(getApplicationContext(), PlayActivity.class);
-                //startActivity(in);
-
-                //Temp Code
-                Toast toast = Toast.makeText(getApplicationContext(), "Feature is not yet available.", Toast.LENGTH_SHORT);
-                toast.show();
+                Intent in = new Intent(getApplicationContext(), TravelMapActivity.class);
+                startActivity(in);
             }
         });
 
