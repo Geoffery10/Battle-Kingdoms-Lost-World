@@ -27,7 +27,6 @@ public class SettingActivity extends AppCompatActivity
         btnCredits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Start Game
                 //Open Intent
                 //Intent in = new Intent(getApplicationContext(), PlayActivity.class);
                 //startActivity(in);
