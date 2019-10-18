@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.thecoredepository.battlekingdoms.activities.ChoosePartyActivity;
 import com.thecoredepository.battlekingdoms.activities.SettingActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,13 +29,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Start Game
+                //This Should Open Up the Party Select Screen.
                 //Open Intent
-                //Intent in = new Intent(getApplicationContext(), PlayActivity.class);
-                //startActivity(in);
-
-                //Temp Code
-                Toast toast = Toast.makeText(getApplicationContext(), "Feature is not yet available.", Toast.LENGTH_SHORT);
-                toast.show();
+                Intent in = new Intent(getApplicationContext(), ChoosePartyActivity.class);
+                startActivity(in);
             }
         });
 
