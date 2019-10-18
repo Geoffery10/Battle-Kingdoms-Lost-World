@@ -25,7 +25,8 @@ public class ChoosePartyActivity extends AppCompatActivity
         btnConfirmParty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Start Game
+                //This Should Open Up the Travel Screen.
+
                 //Open Intent
                 //Intent in = new Intent(getApplicationContext(), PlayActivity.class);
                 //startActivity(in);
