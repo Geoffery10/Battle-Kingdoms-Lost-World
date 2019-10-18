@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         btnQuitGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Do any saving here before shutdown!
+
                 //Quit Game
                 finish();
                 System.exit(0);

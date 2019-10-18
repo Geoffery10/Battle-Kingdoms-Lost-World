@@ -42,9 +42,11 @@ public class SettingActivity extends AppCompatActivity
             public void onClick(View view) {
                 //Open Settings Menu
                 //Open Intent
-                Intent in = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(in);
+                //Intent in = new Intent(getApplicationContext(), MainActivity.class);
+                //startActivity(in);
 
+                //Close Settings
+                finish();
             }
         });
     }
