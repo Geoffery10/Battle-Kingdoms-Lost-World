@@ -1,4 +1,6 @@
 package com.thecoredepository.battlekingdoms.activities;
 
-public class ChoosePartyActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class ChoosePartyActivity extends AppCompatActivity {
 }

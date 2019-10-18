@@ -1,4 +1,6 @@
 package com.thecoredepository.battlekingdoms.activities;
 
-public class BattleActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class BattleActivity extends AppCompatActivity {
 }

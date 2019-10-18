@@ -1,4 +1,6 @@
 package com.thecoredepository.battlekingdoms.activities;
 
-public class TravelMapActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class TravelMapActivity extends AppCompatActivity {
 }
