@@ -61,7 +61,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackHome"
         android:layout_width="63dp"
         android:layout_height="63dp"
         android:background="@drawable/button_right_v2"

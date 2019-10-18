@@ -2,10 +2,13 @@ package com.thecoredepository.battlekingdoms;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.thecoredepository.battlekingdoms.activities.SettingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 //Start Game
                 //Open Intent
                 //Intent in = new Intent(getApplicationContext(), PlayActivity.class);
+                //startActivity(in);
 
                 //Temp Code
                 Toast toast = Toast.makeText(getApplicationContext(), "Feature is not yet available.", Toast.LENGTH_SHORT);
@@ -37,11 +41,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Open Settings Menu
                 //Open Intent
-                //Intent in = new Intent(getApplicationContext(), SettingsActivity.class);
+                Intent in = new Intent(getApplicationContext(), SettingActivity.class);
+                startActivity(in);
 
-                //Temp Code
-                Toast toast = Toast.makeText(getApplicationContext(), "Feature is not yet available.", Toast.LENGTH_SHORT);
-                toast.show();
             }
         });
     }
