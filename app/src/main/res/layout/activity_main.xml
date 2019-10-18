@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/mainbg"
+    android:id="@+id/activity_main"
     tools:context=".MainActivity">
 
     <pl.droidsonroids.gif.GifImageView
@@ -53,6 +54,22 @@
             android:fontFamily="@font/press_start_2p"
             android:lineSpacingExtra="8sp"
             android:text="Play"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextLight"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/btnQuitGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_v2"
+            android:fontFamily="@font/press_start_2p"
+            android:lineSpacingExtra="8sp"
+            android:text="Quit"
             android:textAlignment="center"
             android:textColor="@color/colorTextLight"
             android:textColorLink="@color/colorPrimaryDark"
