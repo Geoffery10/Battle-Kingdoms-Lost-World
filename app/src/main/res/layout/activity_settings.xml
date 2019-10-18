@@ -44,7 +44,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/btnPlayGame"
+            android:id="@+id/btnCredits"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -52,7 +52,7 @@
             android:background="@drawable/button_v2"
             android:fontFamily="@font/press_start_2p"
             android:lineSpacingExtra="8sp"
-            android:text="Play"
+            android:text="Credits"
             android:textAlignment="center"
             android:textColor="@color/colorTextLight"
             android:textColorLink="@color/colorPrimaryDark"
