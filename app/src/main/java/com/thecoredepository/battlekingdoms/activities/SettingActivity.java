@@ -17,6 +17,7 @@ public class SettingActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        fullscreen();
 
         //View Elements
         Button btnCredits = findViewById(R.id.btnCredits);
@@ -49,5 +50,13 @@ public class SettingActivity extends AppCompatActivity
                 finish();
             }
         });
+    }
+
+    private void fullscreen() {
+        View overlay = findViewById(R.id.activity_settings);
+
+        overlay.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 }
