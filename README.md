@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" width="400" height="200" src="https://github.com/Geoffery10/Battle-Kingdoms-Lost-World/blob/master/images/graphics/Battle%20Kingdoms%20-%20Logo.jpg?raw=true">
+<img align="center" width="750" height="200" src="https://github.com/Geoffery10/Battle-Kingdoms-Lost-World/blob/master/app/src/main/res/drawable-v24/battle_kingdoms_logo_v4.gif?raw=true">
 </p>
 
 # Battle Kingdoms - Lost World
