@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class Entity
 {
+	//hi
+	
     //Attributes of an Entity
     String name; //The name of the entity i.e. Marth, Roy, Billy the Angry Goblin
     String race; //The entity's race i.e. Human, Goblin, Robot...
