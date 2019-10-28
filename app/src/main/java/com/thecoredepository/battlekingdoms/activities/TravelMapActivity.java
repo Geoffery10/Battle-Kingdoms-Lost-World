@@ -1,8 +1,10 @@
 package com.thecoredepository.battlekingdoms.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,8 @@ public class TravelMapActivity extends AppCompatActivity
 
         //View Elements
         Button btnBackHome = findViewById(R.id.btnBackHome);
+        //Pins
+        ImageButton btnMapPen_01 = findViewById(R.id.btnMapPen_01);
 
         //Buttons
         btnBackHome.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +35,17 @@ public class TravelMapActivity extends AppCompatActivity
 
                 //Close Settings
                 finish();
+            }
+        });
+
+        btnMapPen_01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Start Game
+                //This Should Open Up the Selected Location.
+                //Open Intent
+                //Intent in = new Intent(getApplicationContext(), LocationActivity.class);
+                //startActivity(in);
             }
         });
     }
