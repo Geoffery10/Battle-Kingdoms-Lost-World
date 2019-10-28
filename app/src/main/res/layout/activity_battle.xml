@@ -15,15 +15,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            app:srcCompat="@drawable/fighter_info_sample" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="77dp"
