@@ -11,6 +11,7 @@ public class Entity
     //Attributes of an Entity
     String name; //The name of the entity i.e. Marth, Roy, Billy the Angry Goblin
     String race; //The entity's race i.e. Human, Goblin, Robot...
+    String type; //Character or Mob
     int health; //Total Health
     int damage; //Total Damage (This is subtracted from health)
     int magic; //Total Magic Points the entity has
