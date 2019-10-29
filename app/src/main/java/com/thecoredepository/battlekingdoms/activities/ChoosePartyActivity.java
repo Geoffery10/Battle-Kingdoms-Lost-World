@@ -27,8 +27,16 @@ public class ChoosePartyActivity extends AppCompatActivity
         setContentView(R.layout.activity_choose_party);
         fullscreen();
 
+        //View Elements
+        continueAndBack();
+        createRecycler();
+    }
+
+    private void createRecycler() {
         RecyclerView recyclerView = findViewById(R.id.character_view);
+        //GET CHARACTER ROASTER FROM BACKEND
         ArrayList<String> characters = new ArrayList<>();
+        //TEMP CHARACTERS
         characters.add("Joe");
         characters.add("John");
         characters.add("Timmy");
@@ -39,9 +47,6 @@ public class ChoosePartyActivity extends AppCompatActivity
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
         }
-
-        //View Elements
-        continueAndBack();
     }
 
     private void continueAndBack() {
