@@ -19,6 +19,10 @@ public class ChoosePartyActivity extends AppCompatActivity
         fullscreen();
 
         //View Elements
+        continueAndBack();
+    }
+
+    private void continueAndBack() {
         Button btnConfirmParty = findViewById(R.id.btnConfirmParty);
         Button btnBackHome = findViewById(R.id.btnBackHome);
 
@@ -26,18 +30,24 @@ public class ChoosePartyActivity extends AppCompatActivity
         btnConfirmParty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //This Should Open Up the Travel Screen.
+                boolean validParty = true;
 
-                //Open Intent
-                Intent in = new Intent(getApplicationContext(), TravelMapActivity.class);
-                startActivity(in);
+                //Check for valid party
+                if (validParty == true) {
+                    //This Should Open Up the Travel Screen.
+
+                    //Open Intent
+                    Intent in = new Intent(getApplicationContext(), TravelMapActivity.class);
+                    startActivity(in);
+                }
+
             }
         });
 
         btnBackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Open Settings Menu
+                //Go back to main
                 //Open Intent
                 //Intent in = new Intent(getApplicationContext(), MainActivity.class);
                 //startActivity(in);
