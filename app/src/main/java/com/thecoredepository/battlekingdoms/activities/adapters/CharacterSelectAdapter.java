@@ -60,7 +60,7 @@ public class CharacterSelectAdapter extends RecyclerView.Adapter<CharacterSelect
                     ChoosePartyActivity.setSelectionCount(ChoosePartyActivity.getSelectionCount() - 1);
                     holder.btnAddRemove.setText("Add");
                 }
-                TextView txtPartySize = (TextView) ((Activity)context).findViewById(R.id.txtPartySize);
+                TextView txtPartySize = ((Activity)context).findViewById(R.id.txtPartySize);
                 txtPartySize.setText("Party " + ChoosePartyActivity.getSelectionCount() + "/4");
             }
         });
