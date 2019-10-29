@@ -19,7 +19,8 @@ import java.util.ArrayList;
 public class ChoosePartyActivity extends AppCompatActivity
 {
     //Global
-    public int selectionCount = 4; //This should be zero
+    private static int selectionCount = 0; //This should be zero
+    public static ArrayList<String> selectedCharacters = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class ChoosePartyActivity extends AppCompatActivity
 
     private void createRecycler() {
         RecyclerView recyclerView = findViewById(R.id.character_view);
+        TextView txtPartySize = findViewById(R.id.txtPartySize);
         //GET CHARACTER ROASTER FROM BACKEND
         ArrayList<String> characters = new ArrayList<>();
         //TEMP CHARACTERS
@@ -99,4 +101,12 @@ public class ChoosePartyActivity extends AppCompatActivity
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                 | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
+
+    public static int getSelectionCount() {
+        return selectionCount;
+    }
+    public static void setSelectionCount(int num) {
+        selectionCount = num;
+    }
+
 }
