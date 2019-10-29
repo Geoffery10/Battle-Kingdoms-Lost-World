@@ -2,43 +2,27 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose_party"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mainbg"
-    android:id="@+id/activity_choose_party"
+    android:background="@drawable/woodbg"
     tools:context=".activities.ChoosePartyActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimaryDarkTrans"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btnBackHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
-
-        <Button
-            android:id="@+id/btnConfirmParty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/button_v2"
-            android:fontFamily="@font/press_start_2p"
-            android:lineSpacingExtra="8sp"
-            android:text="Confirm Party"
-            android:textAlignment="center"
-            android:textColor="@color/colorTextLight"
-            android:textColorLink="@color/colorPrimaryDark"
-            android:textSize="12sp"
-            android:typeface="normal" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/character_view"
@@ -51,18 +35,6 @@
 
     </LinearLayout>
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
-        android:layout_width="77dp"
-        android:layout_height="93dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:src="@drawable/skeleton_idle_v2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/btnBackHome"
         android:layout_width="63dp"
@@ -72,5 +44,27 @@
         android:textColor="@color/colorTextLight"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnConfirmParty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_v2"
+        android:fontFamily="@font/press_start_2p"
+        android:lineSpacingExtra="8sp"
+        android:text="Confirm Party"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextLight"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBackHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBackHome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
