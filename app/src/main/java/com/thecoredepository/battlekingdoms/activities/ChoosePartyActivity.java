@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class ChoosePartyActivity extends AppCompatActivity
 {
     //Global
-    private int selectionCount = 4; //This should be zero
+    public int selectionCount = 4; //This should be zero
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
