@@ -4,11 +4,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.thecoredepository.battlekingdoms.R;
+import com.thecoredepository.battlekingdoms.activities.adapters.CharacterSelectAdapter;
+
+import java.util.ArrayList;
 
 public class ChoosePartyActivity extends AppCompatActivity
 {
@@ -20,6 +26,19 @@ public class ChoosePartyActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_party);
         fullscreen();
+
+        RecyclerView recyclerView = findViewById(R.id.character_view);
+        ArrayList<String> characters = new ArrayList<>();
+        characters.add("Joe");
+        characters.add("John");
+        characters.add("Timmy");
+        characters.add("Billy");
+        for (int i = 0; i < characters.size(); i++)
+        {
+            CharacterSelectAdapter adapter = new CharacterSelectAdapter(this, characters);
+            recyclerView.setAdapter(adapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        }
 
         //View Elements
         continueAndBack();
