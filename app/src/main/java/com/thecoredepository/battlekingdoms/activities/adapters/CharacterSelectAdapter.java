@@ -45,6 +45,7 @@ public class CharacterSelectAdapter extends RecyclerView.Adapter<CharacterSelect
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         Log.d("Recycle", "onBindViewHolder called");
         //THIS IS WHERE STUFF HAPPENS
+        holder.txtNamePlate.setText(characters.get(position));
     }
 
     @Override
@@ -58,10 +59,12 @@ public class CharacterSelectAdapter extends RecyclerView.Adapter<CharacterSelect
     public class ViewHolder extends RecyclerView.ViewHolder{
         //Put Views in the holder
         ImageView img_silhouette;
+        TextView txtNamePlate;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             img_silhouette = itemView.findViewById(R.id.img_silhouette);
+            txtNamePlate = itemView.findViewById(R.id.txtNamePlate);
         }
     }
 }
