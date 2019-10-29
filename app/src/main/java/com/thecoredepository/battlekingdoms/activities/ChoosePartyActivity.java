@@ -12,6 +12,9 @@ import com.thecoredepository.battlekingdoms.R;
 
 public class ChoosePartyActivity extends AppCompatActivity
 {
+    //Global
+    private int selectionCount = 4; //This should be zero
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +36,16 @@ public class ChoosePartyActivity extends AppCompatActivity
                 boolean validParty = true;
 
                 //Check for valid party
-                if (validParty == true) {
-                    //This Should Open Up the Travel Screen.
+                if (selectionCount == 4) {
+                    validParty = true;
+                } else {
+                    validParty = false;
+                }
 
+                if (validParty == true) {
+                    //Save party
+
+                    //Open Up the Travel Screen
                     //Open Intent
                     Intent in = new Intent(getApplicationContext(), TravelMapActivity.class);
                     startActivity(in);
