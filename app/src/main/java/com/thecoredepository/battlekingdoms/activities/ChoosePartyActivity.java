@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class ChoosePartyActivity extends AppCompatActivity
 {
     //Global
-    private static int selectionCount = 0; //This should be zero
+    private static int selectionCount = 0;
     public static ArrayList<String> selectedCharacters = new ArrayList<>();
 
     @Override
