@@ -64,16 +64,19 @@
 
         <TableRow
             android:layout_width="fill_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
                 android:layout_marginBottom="2dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
+                android:background="@drawable/attack_token"
                 android:cropToPadding="false"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/stat_icon_attack" />
@@ -81,49 +84,55 @@
             <TextView
                 android:id="@+id/txtAttack"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:padding="2dp"
-                android:text="1.5x" />
+                android:background="@drawable/stat_box"
+                android:text="1.5x"
+                android:textAlignment="center"
+                android:textSize="14sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
                 android:layout_marginBottom="2dp"
                 android:layout_weight="1"
+                android:background="@drawable/defense_token"
                 app:srcCompat="@drawable/stat_icon_defense" />
 
             <TextView
                 android:id="@+id/txtDefense"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:padding="2dp"
+                android:background="@drawable/stat_box"
                 android:text="2" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
                 android:layout_marginBottom="2dp"
                 android:layout_weight="1"
+                android:background="@drawable/speed_token"
                 app:srcCompat="@drawable/stat_icon_speed" />
 
             <TextView
@@ -132,8 +141,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:padding="2dp"
+                android:background="@drawable/stat_box"
                 android:text="10" />
         </TableRow>
 
@@ -146,8 +154,10 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
                 android:layout_marginBottom="2dp"
                 android:layout_weight="1"
+                android:background="@drawable/magic_token"
                 app:srcCompat="@drawable/stat_icon_magic" />
 
             <TextView
@@ -156,8 +166,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
-                android:padding="2dp"
+                android:background="@drawable/stat_box"
                 android:text="1" />
         </TableRow>
     </TableLayout>
