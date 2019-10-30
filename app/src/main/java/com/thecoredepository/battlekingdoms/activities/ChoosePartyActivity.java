@@ -27,6 +27,7 @@ public class ChoosePartyActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_party);
         fullscreen();
+        setSelectionCount(0);
 
         //View Elements
         continueAndBack();
@@ -43,6 +44,7 @@ public class ChoosePartyActivity extends AppCompatActivity
         characters.add("John");
         characters.add("Timmy");
         characters.add("Billy");
+        characters.add("Johnny");
         for (int i = 0; i < characters.size(); i++)
         {
             CharacterSelectAdapter adapter = new CharacterSelectAdapter(this, characters);
