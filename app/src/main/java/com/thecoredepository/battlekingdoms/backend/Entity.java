@@ -16,6 +16,7 @@ public class Entity
     int damage; //Total Damage (This is subtracted from health)
     int magic; //Total Magic Points the entity has
     int drain; //Total Drain (This is subtracted from magic)
+    int turn;
     //Attack, Defence, and Speed can be modifiers to rolls i.e. Attack = 1.5x
     double attack; //This is the entity's attack stat which increases damage rolls
     double defence; //This is the entity's defence stat which reduces damage taken
@@ -24,4 +25,6 @@ public class Entity
     //Magic
     //Magic can be added in later in development
     //ArrayList spells = new ArrayList(); //List of Spells Available to use
+
+    
 }
