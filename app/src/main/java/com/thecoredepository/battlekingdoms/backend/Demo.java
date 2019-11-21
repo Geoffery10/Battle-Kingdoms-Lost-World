@@ -13,7 +13,7 @@ public class Demo {
 		Fighter demo = new Fighter();
 		
 		//demo.printStat();
-		System.out.println(demo.get_name());
+		System.out.println(demo.getName());
 		System.out.println(":P");
 	}
 
