@@ -44,8 +44,8 @@ public class TravelMapActivity extends AppCompatActivity
                 //Start Game
                 //This Should Open Up the Selected Location.
                 //Open Intent
-                //Intent in = new Intent(getApplicationContext(), LocationActivity.class);
-                //startActivity(in);
+                Intent in = new Intent(getApplicationContext(), BattleActivity.class);
+                startActivity(in);
             }
         });
     }
