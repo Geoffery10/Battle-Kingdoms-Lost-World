@@ -1,3 +1,5 @@
+package com.thecoredepository.battlekingdoms.backend;
+
 public class Trickster extends Character {
 
 	public Trickster() {

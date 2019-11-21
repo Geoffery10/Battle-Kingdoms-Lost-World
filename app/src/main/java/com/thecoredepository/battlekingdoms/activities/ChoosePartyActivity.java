@@ -39,12 +39,7 @@ public class ChoosePartyActivity extends AppCompatActivity
         TextView txtPartySize = findViewById(R.id.txtPartySize);
         //GET CHARACTER ROASTER FROM BACKEND
         ArrayList<String> characters = new ArrayList<>();
-        //TEMP CHARACTERS
-        characters.add("Joe");
-        characters.add("John");
-        characters.add("Timmy");
-        characters.add("Billy");
-        characters.add("Johnny");
+
         for (int i = 0; i < characters.size(); i++)
         {
             CharacterSelectAdapter adapter = new CharacterSelectAdapter(this, characters);
