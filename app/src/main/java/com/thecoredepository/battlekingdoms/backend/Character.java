@@ -22,7 +22,7 @@ public class Character extends Entity {
 	private int icon;
 	
 	//all the same variables as Entity for now
-	public Character(Context context) {
+	public Character() {
 		this.name = "BLANK";
 		this.charClass = "NONE";
 		this.race = "HUMAN";
