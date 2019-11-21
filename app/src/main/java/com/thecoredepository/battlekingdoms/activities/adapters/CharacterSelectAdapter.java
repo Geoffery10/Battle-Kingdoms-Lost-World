@@ -79,25 +79,43 @@ public class CharacterSelectAdapter extends RecyclerView.Adapter<CharacterSelect
     }
 
     public Drawable getIcon(int id) {
-        Drawable icon = context.getDrawable(R.drawable.character_silhouette);
+        Drawable icon = context.getDrawable(R.drawable.character_silhouette_00);
         switch(id) {
             case 1:
-                icon = context.getDrawable(R.drawable.flarefemalehero_01);
+                icon = context.getDrawable(R.drawable.character_silhouette_01);
                 break;
             case 2:
-                icon = context.getDrawable(R.drawable.flarefemalehero_02);
+                icon = context.getDrawable(R.drawable.character_silhouette_02);
                 break;
             case 3:
-                icon = context.getDrawable(R.drawable.flarefemalehero_03);
+                icon = context.getDrawable(R.drawable.character_silhouette_03);
                 break;
             case 4:
-                icon = context.getDrawable(R.drawable.flaremalehero_04);
+                icon = context.getDrawable(R.drawable.character_silhouette_04);
                 break;
             case 5:
-                icon = context.getDrawable(R.drawable.flaremalehero_05);
+                icon = context.getDrawable(R.drawable.character_silhouette_05);
                 break;
             case 6:
-                icon = context.getDrawable(R.drawable.flaremalehero_06);
+                icon = context.getDrawable(R.drawable.character_silhouette_06);
+                break;
+            case 7:
+                icon = context.getDrawable(R.drawable.character_silhouette_07);
+                break;
+            case 8:
+                icon = context.getDrawable(R.drawable.character_silhouette_08);
+                break;
+            case 9:
+                icon = context.getDrawable(R.drawable.character_silhouette_09);
+                break;
+            case 10:
+                icon = context.getDrawable(R.drawable.character_silhouette_10);
+                break;
+            case 11:
+                icon = context.getDrawable(R.drawable.character_silhouette_11);
+                break;
+            case 12:
+                icon = context.getDrawable(R.drawable.character_silhouette_12);
                 break;
         }
         return icon;
