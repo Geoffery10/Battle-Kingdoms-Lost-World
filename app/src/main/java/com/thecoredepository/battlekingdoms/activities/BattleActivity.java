@@ -19,11 +19,11 @@ public class BattleActivity extends AppCompatActivity
         fullscreen();
 
         //View Elements
-        Button btnBackHome = findViewById(R.id.btnBackHome);
+        Button btnRun = findViewById(R.id.btnRun);
 
 
         //Buttons
-        btnBackHome.setOnClickListener(new View.OnClickListener() {
+        btnRun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Open Settings Menu

@@ -8,52 +8,217 @@
     android:background="@drawable/spookytownbg"
     tools:context=".activities.BattleActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:orientation="vertical"
+        android:background="@drawable/button_v2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/img_silhouette"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:foreground="@drawable/character_silhouette_frame"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/character_silhouette_00" />
+
+        <TextView
+            android:id="@+id/txtClass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="Class: Fighter"
+            app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/img_silhouette" />
+
+        <TextView
+            android:id="@+id/txtNamePlate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Maka"
+            android:textColor="@color/colorTextLight"
+            app:layout_constraintEnd_toEndOf="@+id/img_silhouette"
+            app:layout_constraintStart_toStartOf="@+id/img_silhouette"
+            app:layout_constraintTop_toBottomOf="@+id/img_silhouette" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:shrinkColumns="0"
+            android:stretchColumns="1"
+            app:layout_constraintBottom_toBottomOf="@+id/img_silhouette"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/img_silhouette"
+            app:layout_constraintTop_toTopOf="@+id/img_silhouette">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/attack_token"
+                    android:cropToPadding="false"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/stat_icon_attack" />
+
+                <TextView
+                    android:id="@+id/txtAttack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box"
+                    android:text="1.5x"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/defense_token"
+                    app:srcCompat="@drawable/stat_icon_defense" />
+
+                <TextView
+                    android:id="@+id/txtDefense"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box"
+                    android:text="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/speed_token"
+                    app:srcCompat="@drawable/stat_icon_speed" />
+
+                <TextView
+                    android:id="@+id/txtSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box"
+                    android:text="10" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/magic_token"
+                    app:srcCompat="@drawable/stat_icon_magic" />
+
+                <TextView
+                    android:id="@+id/txtMagic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box"
+                    android:text="1" />
+            </TableRow>
+        </TableLayout>
 
         <Button
             android:id="@+id/btnAttack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/attack_token"
-            android:text="Attack" />
-
-        <Button
-            android:id="@+id/btnDefend"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/attack_token"
-            android:text="Defend" />
+            android:minHeight="40dip"
+            android:text="Attack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtClass" />
 
         <Button
             android:id="@+id/btnRun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/attack_token"
-            android:text="Run" />
-    </LinearLayout>
+            android:minHeight="40dip"
+            android:text="Run"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDefend" />
 
-    <Button
-        android:id="@+id/btnBackHome"
-        android:layout_width="63dp"
-        android:layout_height="63dp"
-        android:background="@drawable/button_right_v2"
-        android:foreground="@drawable/back_v1"
-        android:textColor="@color/colorTextLight"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:id="@+id/btnDefend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/attack_token"
+            android:minHeight="40dip"
+            android:text="Defend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAttack" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
