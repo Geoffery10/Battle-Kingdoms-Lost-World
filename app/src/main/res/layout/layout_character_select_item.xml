@@ -16,7 +16,7 @@
         android:foreground="@drawable/character_silhouette_frame"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/character_silhouette" />
+        app:srcCompat="@drawable/character_silhouette_00" />
 
     <TextView
         android:id="@+id/txtClass"

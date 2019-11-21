@@ -1,47 +1,35 @@
 package com.thecoredepository.battlekingdoms.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.thecoredepository.battlekingdoms.MainActivity;
 import com.thecoredepository.battlekingdoms.R;
 
-public class SettingActivity extends AppCompatActivity
-{
+public class CreditsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_credits);
         fullscreen();
 
         //View Elements
-        Button btnCredits = findViewById(R.id.btnCredits);
         Button btnBackHome = findViewById(R.id.btnBackHome);
+        ImageView imgDev01 = findViewById(R.id.imgDev01);
+        ImageView imgDev02 = findViewById(R.id.imgDev02);
+
+        //Set images
+        imgDev01.setImageResource(R.drawable.dev_01);
+        imgDev02.setImageResource(R.drawable.dev_02);
 
         //Buttons
-        btnCredits.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Open Intent
-                Intent in = new Intent(getApplicationContext(), CreditsActivity.class);
-                startActivity(in);
-            }
-        });
-
         btnBackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Open Settings Menu
-                //Open Intent
-                //Intent in = new Intent(getApplicationContext(), MainActivity.class);
-                //startActivity(in);
-
-                //Close Settings
                 finish();
             }
         });
