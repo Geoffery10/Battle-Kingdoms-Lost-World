@@ -3,7 +3,7 @@ package com.thecoredepository.battlekingdoms.backend;
 public class Sharpshooter extends Character {
 
 	public Sharpshooter() {
-		super("Shelly","Sharpshooter","Kenku",15,20,3.0,2.0,2);
+		super("Shelly","Sharpshooter","Kenku",15,20,3.0,2.0,2, 3);
 	}
 	//this was just to test
 	void printStatsToConsole() {

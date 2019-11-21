@@ -1,7 +1,0 @@
-public Battle() {
-    
-    public Battle(){
-
-    }
-
-}

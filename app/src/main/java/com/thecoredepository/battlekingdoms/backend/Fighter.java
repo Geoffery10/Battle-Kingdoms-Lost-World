@@ -6,7 +6,7 @@ public class Fighter extends Character {
 
 	public Fighter() {
 
-		super("Frank","Fighter","Human",30,10,2.0,5.0,2);
+		super("Frank","Fighter","Human",30,10,2.0,5.0,2, 6);
 	}
 	//this was just to test
 	void printStatsToConsole() {

@@ -3,7 +3,7 @@ package com.thecoredepository.battlekingdoms.backend;
 public class Knight extends Character {
 
 	public Knight() {
-		super("Nellson","Knight","Dragonborn",50,5,5.0,10.0,1);
+		super("Nellson","Knight","Dragonborn",50,5,5.0,10.0,1, 1);
 	}
 	//this was just to test
 	void printStatsToConsole() {

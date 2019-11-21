@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.thecoredepository.battlekingdoms.R;
 import com.thecoredepository.battlekingdoms.activities.adapters.CharacterSelectAdapter;
+import com.thecoredepository.battlekingdoms.backend.Character;
+import com.thecoredepository.battlekingdoms.data.Characters;
 
 import java.util.ArrayList;
 
@@ -38,7 +40,9 @@ public class ChoosePartyActivity extends AppCompatActivity
         RecyclerView recyclerView = findViewById(R.id.character_view);
         TextView txtPartySize = findViewById(R.id.txtPartySize);
         //GET CHARACTER ROASTER FROM BACKEND
-        ArrayList<String> characters = new ArrayList<>();
+        Characters charBackend = new Characters();
+        charBackend.intializeCharacters();
+        ArrayList<Character> characters = charBackend.getCharacters();
 
         for (int i = 0; i < characters.size(); i++)
         {

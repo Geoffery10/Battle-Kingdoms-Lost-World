@@ -3,7 +3,7 @@ package com.thecoredepository.battlekingdoms.backend;
 public class Trickster extends Character {
 
 	public Trickster() {
-		super("Tracy","Trickster","Elfling",15,20,3.0,5.0,1);
+		super("Tracy","Trickster","Elfling",15,20,3.0,5.0,1, 2);
 	}
 	//this was just to test
 	void printStatsToConsole() {

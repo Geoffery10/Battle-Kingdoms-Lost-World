@@ -1,5 +1,12 @@
 package com.thecoredepository.battlekingdoms.backend;
 
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+
+import androidx.core.app.ActivityCompat;
+
+import com.thecoredepository.battlekingdoms.R;
 import com.thecoredepository.battlekingdoms.backend.Entity;
 
 public class Character extends Entity {
@@ -12,9 +19,23 @@ public class Character extends Entity {
 	private double attack;
 	private double defence;
 	private double speed;
+	private int icon;
 	
 	//all the same variables as Entity for now
-	public Character(String name, String charClass, String race, int health, int magic, double attack, double defence, double speed) {
+	public Character(Context context) {
+		this.name = "BLANK";
+		this.charClass = "NONE";
+		this.race = "HUMAN";
+		this.type = "Character";
+		this.health = 1;
+		this.magic = 1;
+		this.attack = 1;
+		this.defence = 1;
+		this.speed = 1;
+		this.icon = 1;
+	}
+
+	public Character(String name, String charClass, String race, int health, int magic, double attack, double defence, double speed, int icon) {
 		super();
 		this.name = name;
 		this.charClass = charClass;
@@ -25,6 +46,7 @@ public class Character extends Entity {
 	    this.attack = attack;
 	    this.defence = defence;
 	    this.speed = speed;
+	    this.icon = icon;
 	}
 
 	public String getName() {
@@ -89,6 +111,14 @@ public class Character extends Entity {
 
 	public void setSpeed(double speed) {
 		this.speed = speed;
+	}
+
+	public int getIcon() {
+		return icon;
+	}
+
+	public void setIcon(int icon) {
+		this.icon = icon;
 	}
 
 	void printStatsToConsole() {
