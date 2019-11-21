@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.thecoredepository.battlekingdoms.BuildConfig;
 import com.thecoredepository.battlekingdoms.MainActivity;
 import com.thecoredepository.battlekingdoms.R;
 
@@ -22,6 +24,10 @@ public class SettingActivity extends AppCompatActivity
         //View Elements
         Button btnCredits = findViewById(R.id.btnCredits);
         Button btnBackHome = findViewById(R.id.btnBackHome);
+        TextView txtVersion = findViewById(R.id.txtVersion);
+
+        String versionName = BuildConfig.VERSION_NAME;
+        txtVersion.setText("Version: " + versionName);
 
         //Buttons
         btnCredits.setOnClickListener(new View.OnClickListener() {
