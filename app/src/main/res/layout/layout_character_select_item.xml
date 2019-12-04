@@ -8,7 +8,7 @@
     android:background="@drawable/button_v2">
 
     <ImageView
-        android:id="@+id/img_silhouette"
+        android:id="@+id/img_party"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="@+id/tableLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/img_silhouette"
+        app:layout_constraintTop_toBottomOf="@+id/img_party"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -43,9 +43,9 @@
         android:text="Maka"
         android:textColor="@color/colorTextLight"
         app:layout_constraintBottom_toTopOf="@+id/btnAddRemove"
-        app:layout_constraintEnd_toEndOf="@+id/img_silhouette"
-        app:layout_constraintStart_toStartOf="@+id/img_silhouette"
-        app:layout_constraintTop_toBottomOf="@+id/img_silhouette"
+        app:layout_constraintEnd_toEndOf="@+id/img_party"
+        app:layout_constraintStart_toStartOf="@+id/img_party"
+        app:layout_constraintTop_toBottomOf="@+id/img_party"
         app:layout_constraintVertical_bias="0.0" />
 
     <TableLayout
@@ -56,11 +56,11 @@
         android:layout_marginEnd="8dp"
         android:shrinkColumns="0"
         android:stretchColumns="1"
-        app:layout_constraintBottom_toBottomOf="@+id/img_silhouette"
+        app:layout_constraintBottom_toBottomOf="@+id/img_party"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/img_silhouette"
-        app:layout_constraintTop_toTopOf="@+id/img_silhouette">
+        app:layout_constraintStart_toEndOf="@+id/img_party"
+        app:layout_constraintTop_toTopOf="@+id/img_party">
 
         <TableRow
             android:layout_width="fill_parent"

@@ -9,15 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.thecoredepository.battlekingdoms.R;
 import com.thecoredepository.battlekingdoms.activities.ChoosePartyActivity;
 import com.thecoredepository.battlekingdoms.backend.Character;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -144,7 +141,7 @@ public class CharacterSelectAdapter extends RecyclerView.Adapter<CharacterSelect
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            img_silhouette = itemView.findViewById(R.id.img_silhouette);
+            img_silhouette = itemView.findViewById(R.id.img_party);
             txtNamePlate = itemView.findViewById(R.id.txtNamePlate);
             txtAttack = itemView.findViewById(R.id.txtAttack);
             txtDefense = itemView.findViewById(R.id.txtDefense);
