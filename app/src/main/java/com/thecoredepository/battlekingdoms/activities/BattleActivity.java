@@ -1,24 +1,38 @@
 package com.thecoredepository.battlekingdoms.activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.thecoredepository.battlekingdoms.R;
+import com.thecoredepository.battlekingdoms.backend.Enemy;
+import com.thecoredepository.battlekingdoms.data.Enemies;
 
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 import static com.thecoredepository.battlekingdoms.activities.ChoosePartyActivity.party;
+import static com.thecoredepository.battlekingdoms.activities.ChoosePartyActivity.selectedCharacters;
 
 public class BattleActivity extends AppCompatActivity
 {
     public int turnIndex = 0;
+    public ArrayList<Enemy> enemiesInBattle = new ArrayList<>();
+    public ArrayList<Integer> enemyMaxHealth = new ArrayList<>();
+    private Context myContext = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +51,24 @@ public class BattleActivity extends AppCompatActivity
         boolean canContinue = true;
         turnIndex = new Random().nextInt(party.size());
 
+        //Load Enemies
+        Enemies enemies = new Enemies();
+        enemies.intializeEnemies();
+        enemiesInBattle.add(enemies.getEnemy(new Random().nextInt(enemies.getEnemyCount())));
+
+        //Load Mob Info
+        ImageView img_enemy_01 = findViewById(R.id.img_enemy_01);
+        TextView txt_enemy_01 = findViewById(R.id.txt_enemy_01);
+        ProgressBar bar_enemyhealth_01 = findViewById(R.id.bar_enemyhealth_01);
+        Drawable icon = getIcon(enemiesInBattle.get(0).getIcon());
+        enemyMaxHealth.add(0, enemiesInBattle.get(0).getHealth());
+        bar_enemyhealth_01.setMax(enemiesInBattle.get(0).getHealth());
+        bar_enemyhealth_01.setProgress(enemiesInBattle.get(0).getHealth());
+
+        img_enemy_01.setImageDrawable(icon);
+        txt_enemy_01.setText(""+enemiesInBattle.get(0).getName());
+        //updateEnemy(1);
+
         //Load first character into place by random
         updateCharacter(turnIndex);
 
@@ -46,7 +78,8 @@ public class BattleActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 //Attack Continues Turn Order and Applies Damage
-
+                enemiesInBattle.get(0).setHealth((int)(enemiesInBattle.get(0).getHealth() - party.get(turnIndex).getAttack()));
+                updateEnemy(1);
                 updateTurn();
 
             }
@@ -74,6 +107,18 @@ public class BattleActivity extends AppCompatActivity
                 finish();
             }
         });
+    }
+
+    private void updateEnemy(int index) {
+        /*switch (index) {
+            case 1:
+                ImageView img_enemy_01 = findViewById(R.id.img_enemy_01);
+                TextView txt_enemy_01 = findViewById(R.id.txt_enemy_01);
+                ProgressBar bar_enemyhealth_01 = findViewById(R.id.bar_enemyhealth_01);
+                break;
+        }*/
+        ProgressBar bar_enemyhealth_01 = findViewById(R.id.bar_enemyhealth_01);
+        bar_enemyhealth_01.setProgress((enemiesInBattle.get(0).getHealth()));
     }
 
     private void updateTurn() {

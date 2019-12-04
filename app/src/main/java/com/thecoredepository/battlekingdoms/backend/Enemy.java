@@ -1,9 +1,10 @@
 package com.thecoredepository.battlekingdoms.backend;
 
-public class Character extends Entity {
+import com.thecoredepository.battlekingdoms.backend.Entity;
+
+public class Enemy extends Entity {
 
 	private String name;
-	private String charClass;
 	private String race;
 	private int health;
 	private int magic;
@@ -11,11 +12,10 @@ public class Character extends Entity {
 	private double defence;
 	private double speed;
 	private int icon;
-	
+
 	//all the same variables as Entity for now
-	public Character() {
+	public Enemy() {
 		this.name = "BLANK";
-		this.charClass = "NONE";
 		this.race = "HUMAN";
 		this.type = "Character";
 		this.health = 1;
@@ -26,18 +26,17 @@ public class Character extends Entity {
 		this.icon = 1;
 	}
 
-	public Character(String name, String charClass, String race, int health, int magic, double attack, double defence, double speed, int icon) {
+	public Enemy(String name, String race, int health, int magic, double attack, double defence, double speed, int icon) {
 		super();
 		this.name = name;
-		this.charClass = charClass;
 		this.race = race;
 		this.type = "Character";
-	    this.health = health;
-        this.magic = magic;
-	    this.attack = attack;
-	    this.defence = defence;
-	    this.speed = speed;
-	    this.icon = icon;
+		this.health = health;
+		this.magic = magic;
+		this.attack = attack;
+		this.defence = defence;
+		this.speed = speed;
+		this.icon = icon;
 	}
 
 	public String getName() {
@@ -46,14 +45,6 @@ public class Character extends Entity {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getCharClass() {
-		return charClass;
-	}
-
-	public void setCharClass(String charClass) {
-		this.charClass = charClass;
 	}
 
 	public String getRace() {
@@ -112,15 +103,4 @@ public class Character extends Entity {
 		this.icon = icon;
 	}
 
-	void printStatsToConsole() {
-		//This function is only for testing
-		System.out.println(getName() + "\n");
-		System.out.println(getCharClass() + "\n");
-		System.out.println(getRace() + "\n");
-		System.out.println(getHealth() + "\n");
-		System.out.println(getMagic() + "\n");
-		System.out.println(getAttack() + "\n");
-		System.out.println(getDefence() + "\n");
-		System.out.println(getSpeed() + "\n");
-	}
 }
