@@ -19,10 +19,29 @@ public class BattleActivity extends AppCompatActivity
         fullscreen();
 
         //View Elements
+        Button btnAttack = findViewById(R.id.btnAttack);
+        Button btnDefend = findViewById(R.id.btnDefend);
         Button btnRun = findViewById(R.id.btnRun);
 
 
         //Buttons
+        btnAttack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Attack Continues Turn Order and Applies Damage
+
+            }
+        });
+
+        btnDefend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Block Stops All Damage
+                //Blocking flag will need to be added to entity
+
+            }
+        });
+
         btnRun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
