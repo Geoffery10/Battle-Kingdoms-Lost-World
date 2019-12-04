@@ -12,10 +12,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.thecoredepository.battlekingdoms.R;
 
+import java.util.Random;
+
 import static com.thecoredepository.battlekingdoms.activities.ChoosePartyActivity.party;
 
 public class BattleActivity extends AppCompatActivity
 {
+    public int turnIndex = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,10 +34,11 @@ public class BattleActivity extends AppCompatActivity
 
 
         //ENCOUNTER START!!!
-        //Decide who starts
+        boolean canContinue = true;
+        turnIndex = new Random().nextInt(party.size());
 
-        //Load first character into place
-        updateCharacter(0);
+        //Load first character into place by random
+        updateCharacter(turnIndex);
 
 
         //Buttons
@@ -41,6 +46,8 @@ public class BattleActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 //Attack Continues Turn Order and Applies Damage
+
+                updateTurn();
 
             }
         });
@@ -51,6 +58,7 @@ public class BattleActivity extends AppCompatActivity
                 //Block Stops All Damage
                 //Blocking flag will need to be added to entity
 
+                updateTurn();
             }
         });
 
@@ -66,6 +74,16 @@ public class BattleActivity extends AppCompatActivity
                 finish();
             }
         });
+    }
+
+    private void updateTurn() {
+        //Update Turn
+        if (turnIndex == (party.size() - 1)) {
+            turnIndex = 0;
+        } else {
+            turnIndex = turnIndex + 1;
+        }
+        updateCharacter(turnIndex);
     }
 
     private void updateCharacter(int index) {
