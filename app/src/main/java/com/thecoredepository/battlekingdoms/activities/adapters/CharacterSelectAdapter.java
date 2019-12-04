@@ -42,7 +42,7 @@ public class CharacterSelectAdapter extends RecyclerView.Adapter<CharacterSelect
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
         Log.d("Recycle", "onBindViewHolder called");
         //THIS IS WHERE STUFF HAPPENS
         holder.txtNamePlate.setText(characters.get(position).getName() + "");
@@ -63,12 +63,14 @@ public class CharacterSelectAdapter extends RecyclerView.Adapter<CharacterSelect
                 if (holder.btnAddRemove.getText().equals("Add"))
                 {
                     ChoosePartyActivity.selectedCharacters.add("" + holder.txtNamePlate.getText());
+                    ChoosePartyActivity.party.add(characters.get(position));
                     ChoosePartyActivity.setSelectionCount(ChoosePartyActivity.getSelectionCount() + 1);
                     holder.btnAddRemove.setText("Remove");
                 }
                 else
                 {
                     ChoosePartyActivity.selectedCharacters.remove("" + holder.txtNamePlate.getText());
+                    ChoosePartyActivity.party.remove(position);
                     ChoosePartyActivity.setSelectionCount(ChoosePartyActivity.getSelectionCount() - 1);
                     holder.btnAddRemove.setText("Add");
                 }

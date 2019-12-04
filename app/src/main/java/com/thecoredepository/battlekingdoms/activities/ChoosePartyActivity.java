@@ -23,6 +23,7 @@ public class ChoosePartyActivity extends AppCompatActivity
     //Global
     private static int selectionCount = 0;
     public static ArrayList<String> selectedCharacters = new ArrayList<>();
+    public static ArrayList<Character> party = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
