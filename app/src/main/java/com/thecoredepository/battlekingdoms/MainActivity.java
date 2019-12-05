@@ -20,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
         fullscreen();
 
         //View Elements
+
+        //Buttons
+        buttons();
+    }
+
+    private void buttons() {
         Button btnPlayGame = findViewById(R.id.btnPlayGame);
         Button btnQuitGame = findViewById(R.id.btnQuitGame);
         Button btnSettings = findViewById(R.id.btnSettings);

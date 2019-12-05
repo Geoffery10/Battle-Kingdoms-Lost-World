@@ -107,6 +107,7 @@ public class ChoosePartyActivity extends AppCompatActivity
     public static int getSelectionCount() {
         return selectionCount;
     }
+
     public static void setSelectionCount(int num) {
         selectionCount = num;
     }

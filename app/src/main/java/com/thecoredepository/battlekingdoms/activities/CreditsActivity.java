@@ -18,7 +18,6 @@ public class CreditsActivity extends AppCompatActivity {
         fullscreen();
 
         //View Elements
-        Button btnBackHome = findViewById(R.id.btnBackHome);
         ImageView imgDev01 = findViewById(R.id.imgDev01);
         ImageView imgDev02 = findViewById(R.id.imgDev02);
 
@@ -27,6 +26,11 @@ public class CreditsActivity extends AppCompatActivity {
         imgDev02.setImageResource(R.drawable.dev_02);
 
         //Buttons
+        buttons();
+    }
+
+    private void buttons() {
+        Button btnBackHome = findViewById(R.id.btnBackHome);
         btnBackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -32,7 +32,6 @@ public class BattleActivity extends AppCompatActivity
     public int turnIndex = 0;
     public ArrayList<Enemy> enemiesInBattle = new ArrayList<>();
     public ArrayList<Integer> enemyMaxHealth = new ArrayList<>();
-    private Context myContext = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +73,13 @@ public class BattleActivity extends AppCompatActivity
 
 
         //Buttons
+        buttons();
+    }
+
+    private void buttons() {
+        Button btnAttack = findViewById(R.id.btnAttack);
+        Button btnDefend = findViewById(R.id.btnDefend);
+        Button btnRun = findViewById(R.id.btnRun);
         btnAttack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

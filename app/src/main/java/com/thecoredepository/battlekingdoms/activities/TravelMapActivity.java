@@ -20,11 +20,15 @@ public class TravelMapActivity extends AppCompatActivity
         fullscreen();
 
         //View Elements
-        Button btnBackHome = findViewById(R.id.btnBackHome);
         //Pins
         ImageButton btnMapPen_01 = findViewById(R.id.btnMapPen_01);
 
         //Buttons
+        buttons(btnMapPen_01);
+    }
+
+    private void buttons(ImageButton btnMapPen_01) {
+        Button btnBackHome = findViewById(R.id.btnBackHome);
         btnBackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

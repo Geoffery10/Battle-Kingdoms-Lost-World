@@ -22,14 +22,18 @@ public class SettingActivity extends AppCompatActivity
         fullscreen();
 
         //View Elements
-        Button btnCredits = findViewById(R.id.btnCredits);
-        Button btnBackHome = findViewById(R.id.btnBackHome);
         TextView txtVersion = findViewById(R.id.txtVersion);
 
         String versionName = BuildConfig.VERSION_NAME;
         txtVersion.setText("Version: " + versionName);
 
         //Buttons
+        buttons();
+    }
+
+    private void buttons() {
+        Button btnCredits = findViewById(R.id.btnCredits);
+        Button btnBackHome = findViewById(R.id.btnBackHome);
         btnCredits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
